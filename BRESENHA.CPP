@@ -13,11 +13,11 @@ void main()
 	cin>>x1>>y1;
 	cout<<"Enter values of x2,y2"<<endl;
 	cin>>x2>>y2;
+	dx=x2-x1;
+	dy=y2-y1;
 	putpixel(x1,y1,2);
 	while(y1<y2)
 	{
-		dx=x2-x1;
-		dy=y2-y1;
 		pk=2*dy-dx;
 		if(pk>0)
 		{
