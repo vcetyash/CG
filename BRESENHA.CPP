@@ -18,17 +18,19 @@ void main()
 	putpixel(x1,y1,2);
 	while(y1<y2)
 	{
-		pk=2*dy-dx;
+		pk+=2*dy-dx;
 		if(pk>0)
 		{
 			x1+=1;
 			y1+=1;
 			putpixel(x1,y1,2);
+			pk+=2*dy-dx;
 		}
 		if(pk<0)
 		{
 			x1+=1;
 			putpixel(x1,y1,2);
+			pk+=2*dy;
 		}
 	}
 	getch();
