@@ -16,15 +16,15 @@ void main()
 	dx=x2-x1;
 	dy=y2-y1;
 	putpixel(x1,y1,2);
-	while(y1<y2)
+	pk=2*dy-dx;
+	while(x1<x2)
 	{
-		pk+=2*dy-dx;
 		if(pk>0)
 		{
 			x1+=1;
 			y1+=1;
 			putpixel(x1,y1,2);
-			pk+=2*dy-dx;
+			pk+=2*dy-2*dx;
 		}
 		if(pk<0)
 		{
